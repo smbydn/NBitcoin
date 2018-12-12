@@ -110,9 +110,9 @@ namespace NBitcoin.Altcoins
 			builder.SetConsensus(new Consensus()
 			{
 				SubsidyHalvingInterval = 210000,
-				MajorityEnforceBlockUpgrade = 750,
-				MajorityRejectBlockOutdated = 950,
-				MajorityWindow = 1000,
+				MajorityEnforceBlockUpgrade = 75,
+				MajorityRejectBlockOutdated = 51,
+				MajorityWindow = 100,
 				BIP34Hash = new uint256("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8"),
 				PowLimit = new Target(new uint256("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff")),
 				PowTargetTimespan = TimeSpan.FromSeconds(14 * 24 * 60 * 60),
