@@ -7,7 +7,7 @@ using System.Text;
 
 namespace NBitcoin.Altcoins
 {
-	class BitcoinAtom : NetworkSetBase
+	public class BitcoinAtom : NetworkSetBase
 	{
 		public static BitcoinAtom Instance { get; } = new BitcoinAtom();
 
@@ -15,7 +15,6 @@ namespace NBitcoin.Altcoins
 
 		private BitcoinAtom()
 		{
-
 		}
 
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -166,7 +165,7 @@ namespace NBitcoin.Altcoins
 				PowAllowMinDifficultyBlocks = true,
 				RuleChangeActivationThreshold = 108,
 				MinerConfirmationWindow = 144,
-				MinimumChainWork = new uint256("0x00"),
+				MinimumChainWork = new uint256("0000000000000000000000000000000000000000000000000000000000000000"),
 				ConsensusFactory = BitcoinAtomConsensusFactory.Instance,
 				SupportSegwit = true,
 				CoinbaseMaturity = 100

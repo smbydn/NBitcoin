@@ -18,9 +18,9 @@ namespace NBitcoin.Tests
 		public void NoCrashQuickTest()
 		{
 			HashSet<string> coins = new HashSet<string>();
-			foreach (var network in NBitcoin.Altcoins.AltNetworkSets.GetAll().ToList())
+		foreach (var network in NBitcoin.Altcoins.AltNetworkSets.GetAll().ToList())
 			{
-				if (network == Altcoins.AltNetworkSets.Liquid) // No testnet
+				 if (network == Altcoins.AltNetworkSets.Liquid) // No testnet
 					continue;
 				Assert.True(coins.Add(network.CryptoCode.ToLowerInvariant()));
 				Assert.NotEqual(network.Mainnet, network.Regtest);
